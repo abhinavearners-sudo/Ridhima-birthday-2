@@ -1,0 +1,2438 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#080308">
+
+<title>For My Ridhima ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:#080308;
+
+    color:white;
+
+    font-family:Poppins,sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+/* BACKGROUND */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-3;
+
+    background:
+
+    radial-gradient(circle at 15% 20%,rgba(255,40,120,.20),transparent 30%),
+
+    radial-gradient(circle at 85% 70%,rgba(160,40,255,.16),transparent 30%),
+
+    linear-gradient(135deg,#10030b,#050105);
+
+}
+
+/* STARS */
+
+.stars{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-1;
+
+    pointer-events:none;
+
+}
+
+.star{
+
+    position:absolute;
+
+    width:2px;
+
+    height:2px;
+
+    border-radius:50%;
+
+    background:white;
+
+    animation:twinkle 2s infinite alternate;
+
+}
+
+@keyframes twinkle{
+
+    from{opacity:.1}
+
+    to{opacity:.9}
+
+}
+
+/* INTRO */
+
+#intro{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:9999;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:
+
+    radial-gradient(circle,#420822,#13030d 55%,#030103);
+
+    transition:1.2s ease;
+
+    padding:20px;
+
+}
+
+#intro.hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    pointer-events:none;
+
+}
+
+.intro-heart{
+
+    font-size:80px;
+
+    animation:pulse 1.3s infinite;
+
+}
+
+@keyframes pulse{
+
+    50%{
+
+        transform:scale(1.2);
+
+    }
+
+}
+
+.intro-title{
+
+    font:90px 'Great Vibes',cursive;
+
+    color:#ff91b8;
+
+    text-shadow:0 0 35px rgba(255,80,150,.5);
+
+}
+
+.intro-sub{
+
+    color:#e4c8d4;
+
+    letter-spacing:4px;
+
+    font-size:11px;
+
+    margin:10px 0 30px;
+
+}
+
+.open{
+
+    padding:14px 32px;
+
+    border:1px solid #ff6d9f;
+
+    border-radius:50px;
+
+    background:linear-gradient(135deg,#ff3378,#9c216e);
+
+    color:white;
+
+    cursor:pointer;
+
+    box-shadow:0 0 30px rgba(255,50,120,.4);
+
+    transition:.3s;
+
+}
+
+.open:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* NAV */
+
+nav{
+
+    position:fixed;
+
+    top:0;
+
+    width:100%;
+
+    z-index:100;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    padding:14px;
+
+    background:rgba(5,2,5,.72);
+
+    backdrop-filter:blur(15px);
+
+    border-bottom:1px solid rgba(255,255,255,.07);
+
+}
+
+nav a{
+
+    color:#d9c4ce;
+
+    text-decoration:none;
+
+    font-size:10px;
+
+    letter-spacing:1px;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#ff91b8;
+
+}
+
+/* COMMON */
+
+section{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    padding:110px 20px;
+
+}
+
+.title{
+
+    text-align:center;
+
+    margin-bottom:55px;
+
+}
+
+.title h2{
+
+    font:60px 'Great Vibes',cursive;
+
+    color:#ff91b8;
+
+}
+
+.title p{
+
+    color:#a99ba3;
+
+    font-size:13px;
+
+}
+
+/* HERO */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.hero small{
+
+    color:#ff7da9;
+
+    letter-spacing:5px;
+
+}
+
+.hero h1{
+
+    font:clamp(75px,15vw,150px) 'Great Vibes',cursive;
+
+    color:white;
+
+    text-shadow:0 0 40px rgba(255,70,140,.5);
+
+}
+
+.hero h3{
+
+    font:30px 'Cormorant Garamond',serif;
+
+    color:#f4dce6;
+
+}
+
+.hero p{
+
+    max-width:600px;
+
+    color:#bbaeb5;
+
+    line-height:1.8;
+
+    margin-top:20px;
+
+}
+
+/* COUNTDOWN */
+
+.countdown-box{
+
+    margin-top:45px;
+
+    text-align:center;
+
+}
+
+.countdown-title{
+
+    color:#ff8bb2;
+
+    font-size:12px;
+
+    letter-spacing:3px;
+
+    margin-bottom:15px;
+
+}
+
+.countdown{
+
+    display:flex;
+
+    gap:10px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.time{
+
+    min-width:75px;
+
+    padding:14px 10px;
+
+    border:1px solid rgba(255,120,165,.25);
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(10px);
+
+}
+
+.time span{
+
+    display:block;
+
+    font-size:28px;
+
+    color:#ff9abd;
+
+}
+
+.time small{
+
+    color:#96858f;
+
+    letter-spacing:1px;
+
+}
+
+/* BIRTHDAY */
+
+#birthday{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:8000;
+
+    background:
+
+    radial-gradient(circle at center,#510b2c,#13030d 55%,#030103);
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+#birthday.show{
+
+    display:flex;
+
+}
+
+.birthday-content{
+
+    animation:appear 1.5s ease;
+
+}
+
+@keyframes appear{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.7);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+.birthday-content .cake{
+
+    font-size:80px;
+
+}
+
+.birthday-content h1{
+
+    font:clamp(60px,12vw,130px) 'Great Vibes',cursive;
+
+    color:#ff91b8;
+
+    text-shadow:0 0 40px rgba(255,70,140,.5);
+
+}
+
+.birthday-content h2{
+
+    font:32px 'Cormorant Garamond',serif;
+
+}
+
+.birthday-content p{
+
+    color:#cbbbc4;
+
+    margin:20px auto;
+
+    max-width:600px;
+
+    line-height:1.8;
+
+}
+
+.continue{
+
+    padding:12px 28px;
+
+    border-radius:50px;
+
+    border:1px solid #ff7eab;
+
+    background:#ff397c;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+/* LETTER */
+
+.letter{
+
+    padding:55px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,120,170,.18);
+
+    box-shadow:0 20px 70px rgba(0,0,0,.4);
+
+}
+
+.letter p{
+
+    font:20px/1.8 'Cormorant Garamond',serif;
+
+    color:#ded1d7;
+
+    margin-bottom:22px;
+
+}
+
+.highlight{
+
+    color:#ff91b8;
+
+}
+
+.quote{
+
+    text-align:center;
+
+    font:35px 'Great Vibes',cursive;
+
+    color:#ff91b8;
+
+    margin:40px 0;
+
+}
+
+/* TIMELINE */
+
+.timeline{
+
+    position:relative;
+
+    max-width:750px;
+
+    margin:auto;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    bottom:0;
+
+    width:1px;
+
+    background:#ff659d;
+
+}
+
+.event{
+
+    position:relative;
+
+    width:50%;
+
+    padding:20px 35px;
+
+}
+
+.event:nth-child(odd){
+
+    text-align:right;
+
+}
+
+.event:nth-child(even){
+
+    left:50%;
+
+}
+
+.dot{
+
+    position:absolute;
+
+    top:30px;
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:#ff659d;
+
+    box-shadow:0 0 20px #ff659d;
+
+}
+
+.event:nth-child(odd) .dot{
+
+    right:-6px;
+
+}
+
+.event:nth-child(even) .dot{
+
+    left:-6px;
+
+}
+
+.event-card{
+
+    padding:24px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.07);
+
+    transition:.3s;
+
+}
+
+.event-card:hover{
+
+    transform:translateY(-4px);
+
+    border-color:rgba(255,120,170,.3);
+
+}
+
+.date{
+
+    color:#ff83ad;
+
+    font-size:11px;
+
+    letter-spacing:2px;
+
+}
+
+.event h3{
+
+    font:28px 'Cormorant Garamond',serif;
+
+    margin:7px 0;
+
+}
+
+.event p{
+
+    color:#b9aab2;
+
+    font-size:13px;
+
+    line-height:1.7;
+
+}
+
+/* SECRET */
+
+.secret{
+
+    text-align:center;
+
+    padding:55px 20px;
+
+    border:1px solid rgba(255,100,160,.25);
+
+    border-radius:25px;
+
+    background:linear-gradient(
+
+        145deg,
+
+        rgba(255,50,120,.08),
+
+        rgba(120,30,180,.05)
+
+    );
+
+}
+
+.secret-number{
+
+    font:70px 'Cormorant Garamond',serif;
+
+    color:#ff91b8;
+
+    letter-spacing:8px;
+
+}
+
+.secret p{
+
+    color:#aa9aa3;
+
+}
+
+/* GALLERY */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+}
+
+.photo{
+
+    aspect-ratio:3/4;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:#150811;
+
+}
+
+.photo img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.photo:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* LIGHTBOX */
+
+#lightbox{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:9000;
+
+    background:rgba(0,0,0,.94);
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+}
+
+#lightbox img{
+
+    max-width:94%;
+
+    max-height:90%;
+
+    border-radius:15px;
+
+}
+
+.close{
+
+    position:absolute;
+
+    top:15px;
+
+    right:25px;
+
+    font-size:40px;
+
+    cursor:pointer;
+
+    color:white;
+
+}
+
+/* FINAL */
+
+.final{
+
+    min-height:90vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.final-heart{
+
+    font-size:70px;
+
+    animation:pulse 1.3s infinite;
+
+}
+
+.final h2{
+
+    font:90px 'Great Vibes',cursive;
+
+    color:#ff91b8;
+
+}
+
+.final p{
+
+    max-width:650px;
+
+    color:#bbaeb5;
+
+    line-height:1.8;
+
+}
+
+.signature{
+
+    font:45px 'Great Vibes',cursive;
+
+    color:#ff91b8;
+
+    margin-top:30px;
+
+}
+
+/* MUSIC */
+
+.music{
+
+    position:fixed;
+
+    right:18px;
+
+    bottom:18px;
+
+    z-index:200;
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    border:1px solid #ff77a8;
+
+    background:#210914;
+
+    color:white;
+
+    cursor:pointer;
+
+    box-shadow:0 0 20px rgba(255,50,120,.3);
+
+}
+
+/* HEARTS */
+
+.heart{
+
+    position:fixed;
+
+    bottom:-30px;
+
+    z-index:7000;
+
+    pointer-events:none;
+
+    animation:floatHeart 7s linear forwards;
+
+}
+
+@keyframes floatHeart{
+
+    0%{
+
+        transform:translateY(0) scale(.7);
+
+        opacity:0;
+
+    }
+
+    15%{
+
+        opacity:.8;
+
+    }
+
+    100%{
+
+        transform:translateY(-110vh) scale(1.4) rotate(30deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/* CONFETTI */
+
+.confetti{
+
+    position:fixed;
+
+    top:-20px;
+
+    z-index:8500;
+
+    width:8px;
+
+    height:14px;
+
+    pointer-events:none;
+
+    animation:confettiFall 4s linear forwards;
+
+}
+
+@keyframes confettiFall{
+
+    0%{
+
+        transform:translateY(-20px) rotate(0);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:translateY(110vh) rotate(720deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/* FOOTER */
+
+footer{
+
+    text-align:center;
+
+    padding:35px 20px;
+
+    color:#705c66;
+
+    font-size:10px;
+
+    letter-spacing:2px;
+
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .intro-title{
+
+        font-size:65px;
+
+    }
+
+    .intro-sub{
+
+        font-size:9px;
+
+        letter-spacing:2px;
+
+    }
+
+    nav{
+
+        gap:10px;
+
+        padding:12px 5px;
+
+    }
+
+    nav a{
+
+        font-size:8px;
+
+    }
+
+    section{
+
+        padding:85px 15px;
+
+    }
+
+    .title h2{
+
+        font-size:48px;
+
+    }
+
+    .letter{
+
+        padding:25px;
+
+    }
+
+    .letter p{
+
+        font-size:18px;
+
+    }
+
+    .quote{
+
+        font-size:29px;
+
+    }
+
+    .timeline::before{
+
+        left:8px;
+
+    }
+
+    .event,
+
+    .event:nth-child(even),
+
+    .event:nth-child(odd){
+
+        width:100%;
+
+        left:0;
+
+        text-align:left;
+
+        padding-left:30px;
+
+        padding-right:0;
+
+    }
+
+    .event:nth-child(odd) .dot,
+
+    .event:nth-child(even) .dot{
+
+        left:2px;
+
+        right:auto;
+
+    }
+
+    .gallery{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:9px;
+
+    }
+
+    .final h2{
+
+        font-size:70px;
+
+    }
+
+    .birthday-content h1{
+
+        font-size:65px;
+
+    }
+
+    .birthday-content h2{
+
+        font-size:27px;
+
+    }
+
+    .birthday-content .cake{
+
+        font-size:65px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- STARS -->
+
+<div class="stars" id="stars"></div>
+
+<!-- INTRO -->
+
+<div id="intro">
+
+    <div>
+
+        <div class="intro-heart">❤️</div>
+
+        <div class="intro-title">
+
+            For Ridhima
+
+        </div>
+
+        <div class="intro-sub">
+
+            A LITTLE SURPRISE FROM YOUR ABHINAV
+
+        </div>
+
+        <button class="open" onclick="openSite()">
+
+            Open Your Surprise ❤️
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- BIRTHDAY REVEAL -->
+
+<div id="birthday">
+
+    <div class="birthday-content">
+
+        <div class="cake">🎂</div>
+
+        <h1>Happy Birthday</h1>
+
+        <h2>My Ridhima ❤️</h2>
+
+        <p>
+
+            Today is not just another day...
+
+            today is the day my favourite person was born. 🥹❤️
+
+        </p>
+
+        <button class="continue" onclick="closeBirthday()">
+
+            Enter Your Birthday World ✨
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- NAV -->
+
+<nav>
+
+    <a href="#home">HOME</a>
+
+    <a href="#countdown">COUNTDOWN</a>
+
+    <a href="#story">STORY</a>
+
+    <a href="#letter">LETTER</a>
+
+    <a href="#memories">MEMORIES</a>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <small>TO MY FAVOURITE PERSON</small>
+
+    <h1>Ridhima</h1>
+
+    <h3>
+
+        My Pyari Chudail • Madam Ji • Malkin • Babyyy ❤️
+
+    </h3>
+
+    <p>
+
+        From a simple conversation to a story
+
+        I never want to forget.
+
+    </p>
+
+    <!-- COUNTDOWN -->
+
+    <div class="countdown-box" id="countdown">
+
+        <div class="countdown-title">
+
+            HER BIRTHDAY IS COMING...
+
+        </div>
+
+        <div class="countdown">
+
+            <div class="time">
+
+                <span id="days">00</span>
+
+                <small>DAYS</small>
+
+            </div>
+
+            <div class="time">
+
+                <span id="hours">00</span>
+
+                <small>HOURS</small>
+
+            </div>
+
+            <div class="time">
+
+                <span id="minutes">00</span>
+
+                <small>MINUTES</small>
+
+            </div>
+
+            <div class="time">
+
+                <span id="seconds">00</span>
+
+                <small>SECONDS</small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- STORY -->
+
+<section id="story">
+
+    <div class="title">
+
+        <h2>Our Little Story</h2>
+
+        <p>
+
+            From strangers to something beautiful ❤️
+
+        </p>
+
+    </div>
+
+    <div class="timeline">
+
+        <div class="event">
+
+            <div class="dot"></div>
+
+            <div class="event-card">
+
+                <div class="date">
+
+                    16 NOVEMBER 2025
+
+                </div>
+
+                <h3>First Chat</h3>
+
+                <p>
+
+                    Ek normal si conversation,
+
+                    jo meri life ki sabse beautiful story ki beginning ban gayi.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="event">
+
+            <div class="dot"></div>
+
+            <div class="event-card">
+
+                <div class="date">
+
+                    18 NOVEMBER 2025
+
+                </div>
+
+                <h3>First Meeting ❤️</h3>
+
+                <p>
+
+                    Tumne mujhe chocolate di,
+
+                    maine tumhe chocolate di,
+
+                    aur phir hum dono ne ek doosre ko propose kiya.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="event">
+
+            <div class="dot"></div>
+
+            <div class="event-card">
+
+                <div class="date">
+
+                    24 DECEMBER 2025
+
+                </div>
+
+                <h3>Dhanush Yagya Mela</h3>
+
+                <p>
+
+                    Tumne mujhe woh rubber band diya.
+
+                    Chhoti si cheez, lekin mere liye bahut special.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="event">
+
+            <div class="dot"></div>
+
+            <div class="event-card">
+
+                <div class="date">
+
+                    13 FEBRUARY 2026
+
+                </div>
+
+                <h3>Little Gifts 🎁</h3>
+
+                <p>
+
+                    Tumhari watch aur special hankey,
+
+                    aur meri taraf se cute sa little doll.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="event">
+
+            <div class="dot"></div>
+
+            <div class="event-card">
+
+                <div class="date">
+
+                    20 FEBRUARY 2026
+
+                </div>
+
+                <h3>Advanced Birthday ❤️</h3>
+
+                <p>
+
+                    Ballians Restaurant,
+
+                    handwritten letter, chocolate aur ring...
+
+                    aur mera crazy heartbeat.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- LETTER -->
+
+<section id="letter">
+
+    <div class="title">
+
+        <h2>A Letter For My Ridhima</h2>
+
+        <p>
+
+            Everything I sometimes fail to say ❤️
+
+        </p>
+
+    </div>
+
+    <div class="letter">
+
+        <p>
+
+            To my
+
+            <span class="highlight">
+
+                Pyari Chudail, Madam Ji, Malkin, Babyyy,
+
+                Meri Pagluuu
+
+            </span>
+
+            ... and my favourite person, Ridhima. ❤️
+
+        </p>
+
+        <p>
+
+            Pata nahi main ye sab words mein kitna achhe se likh paunga,
+
+            but aaj main dil ki woh saari baatein tumse kehna chahta hoon
+
+            jo shayad main saamne kabhi properly nahi keh pata.
+
+        </p>
+
+        <p>
+
+            <span class="highlight">16 November 2025</span> —
+
+            hamari first chat hui thi.
+
+            Tab mujhe bilkul nahi pata tha ki ek normal si conversation
+
+            meri zindagi ki sabse beautiful story ki beginning ban jayegi.
+
+        </p>
+
+        <p>
+
+            Phir aaya
+
+            <span class="highlight">18 November 2025</span>...
+
+            wahi din jab hum pehli baar mile the.
+
+        </p>
+
+        <p>
+
+            Hum dono us din ekdum anjaan the,
+
+            lekin mujhe kya pata tha ki jis ladki se main us din mil raha hoon,
+
+            wahi ek din meri life ka itna important part ban jayegi.
+
+        </p>
+
+        <p>
+
+            Tumne mujhe chocolate di aur maine tumhe bhi chocolate di.
+
+            Aur usi din maine tumhe propose kiya...
+
+            aur tumne bhi mujhe call par propose kiya. ❤️
+
+        </p>
+
+        <div class="quote">
+
+            "Us din main sirf tumse nahi mila tha...
+
+            us din main apni future wife aur life partner se mila tha." ❤️♾️
+
+        </div>
+
+        <p>
+
+            Phir <span class="highlight">24 December 2025</span>,
+
+            Dhanush Yagya Mela mein hamari second meeting hui.
+
+            Tumne mujhe woh rubber band diya tha,
+
+            jo maine pehna tha.
+
+        </p>
+
+        <p>
+
+            Chhoti si cheez thi,
+
+            lekin mere liye woh bahut special thi.
+
+        </p>
+
+        <p>
+
+            Phir <span class="highlight">13 February 2026</span>...
+
+            Tumne mujhe beautiful watch aur special hankey diya,
+
+            aur maine tumhe woh cute sa chhota doll gift kiya.
+
+        </p>
+
+        <p>
+
+            Aur phir <span class="highlight">20 February 2026</span>...
+
+            Ballians Restaurant mein meri advanced birthday party.
+
+            Tum mere saamne baithi thi aur mera heartbeat literally
+
+            bahut fast ho raha tha. 😂❤️
+
+        </p>
+
+        <p>
+
+            Maine tumhe handwritten letter, chocolate aur ring di thi.
+
+            Shayad us din mujhe aur strongly feel hua ki
+
+            tum mere liye sirf koi normal person nahi ho.
+
+        </p>
+
+        <p>
+
+            Ridhima, tumne meri har chhoti se chhoti baat suni hai.
+
+            Meri bakbak suni hai, meri stupid baatein suni hain,
+
+            meri khushi mein khush hui ho aur meri problems mein mere saath rahi ho.
+
+        </p>
+
+        <p>
+
+            Main maanta hoon main perfect nahi hoon.
+
+            Main kabhi-kabhi bahut zyada bol deta hoon,
+
+            kabhi mazaak mein limit cross kar deta hoon,
+
+            kabhi stupid mistakes kar deta hoon...
+
+        </p>
+
+        <div class="quote">
+
+            "But ek cheez kabhi fake nahi thi —
+
+            Mera pyaar tumhare liye." ❤️
+
+        </div>
+
+        <p>
+
+            Tumhari smile mujhe genuinely khush karti hai.
+
+            Tumhari care mujhe special feel karati hai.
+
+            Tumhara gussa bhi apna sa lagta hai. 😂
+
+            Aur tumhari woh chhoti-chhoti pagalpanti...
+
+            wahi toh meri favourite hai.
+
+        </p>
+
+        <p>
+
+            Tum simple ho,
+
+            aur shayad isi simplicity ki wajah se
+
+            mujhe tum itni beautiful lagti ho.
+
+        </p>
+
+        <p>
+
+            Main tumhari sirf aaj ki beauty se pyaar nahi karta.
+
+            Main tumse tumhari poori personality,
+
+            tumhari aadaton, tumhari smile,
+
+            tumhari imperfections aur tumhare pure heart ke saath pyaar karta hoon.
+
+        </p>
+
+        <p>
+
+            Kal tum badal jao,
+
+            waqt badal jaaye,
+
+            hum bade ho jaayein,
+
+            tumhare face par wrinkles aa jaayein,
+
+            kuch bhi badal jaaye...
+
+        </p>
+
+        <div class="quote">
+
+            "Mera pyaar tumhare liye nahi badlega." ❤️
+
+        </div>
+
+        <p>
+
+            Aur haan, hamara secret bhi toh hai...
+
+        </p>
+
+        <p style="text-align:center;color:#ff91b8;font-size:28px">
+
+            15 = Me<br>
+
+            22 = You<br>
+
+            15:22 = Us 🤭❤️♾️
+
+        </p>
+
+        <p>
+
+            Baaki duniya ke liye shayad ye sirf numbers hain,
+
+            but mere liye 15:22 hamari chhoti si secret story hai.
+
+        </p>
+
+        <p style="text-align:center;color:#ff91b8;font-size:40px">
+
+            1894 ❤️
+
+        </p>
+
+        <p>
+
+            Ridhima, main future ko lekar bahut kuch nahi kehna chahta,
+
+            kyunki future mein kya hoga koi nahi jaanta.
+
+            Bas itna zaroor chahta hoon ki jab bhi future ki taraf dekhu,
+
+            usmein tum mere saath raho.
+
+        </p>
+
+        <p>
+
+            Main chahta hoon ki hum sirf birthdays nahi,
+
+            bahut saare birthdays saath celebrate karein.
+
+            Sirf months nahi, bahut saare years complete karein.
+
+            Sirf achhe moments nahi,
+
+            mushkil moments mein bhi ek-doosre ka haath pakde rahein.
+
+        </p>
+
+        <p>
+
+            Aur agar kabhi hum dono mein problems aayein,
+
+            toh hum ek-doosre se door jaane ke bajay
+
+            ek-doosre ke paas baithkar solve karein.
+
+        </p>
+
+        <div class="quote">
+
+            "Because I don't want a perfect relationship.<br>
+
+            I want OUR relationship." ❤️
+
+        </div>
+
+        <p>
+
+            With our fights, our jokes, our stupid moments,
+
+            our memories, our love and everything that makes us us. ❤️
+
+        </p>
+
+        <p>
+
+            Happy Birthday to the girl who started as a stranger
+
+            and slowly became my whole world. 🎂❤️
+
+        </p>
+
+        <p>
+
+            Tum meri Pyari Chudail,
+
+            meri Madam Ji,
+
+            meri Malkin,
+
+            meri Babyyy,
+
+            meri Pagluuu,
+
+            meri Rashmalai,
+
+            meri Kuchu Puchu...
+
+        </p>
+
+        <p style="text-align:center;color:#ff91b8;font-size:25px">
+
+            aur sabse important —<br>
+
+            meri Ridhima ho. ❤️
+
+        </p>
+
+        <p>
+
+            Barbad from Saiyara. 🥹❤️
+
+        </p>
+
+        <p>Thank you for coming into my life.</p>
+
+        <p>Thank you for choosing me.</p>
+
+        <p>Thank you for loving me.</p>
+
+        <p>And thank you for being you.</p>
+
+        <div class="quote">
+
+            I love you, Ridhima.<br>
+
+            More than these words can ever explain. ❤️♾️
+
+        </div>
+
+        <p style="text-align:center;color:#ff91b8;font-size:25px">
+
+            ♡ Always Yours ♡
+
+        </p>
+
+        <p style="text-align:center;color:#ff91b8">
+
+            15:22<br>
+
+            1894 ❤️
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- SECRET -->
+
+<section>
+
+    <div class="title">
+
+        <h2>Only We Know</h2>
+
+        <p>
+
+            Some numbers are more than numbers...
+
+        </p>
+
+    </div>
+
+    <div class="secret">
+
+        <div class="secret-number">
+
+            15:22
+
+        </div>
+
+        <p>
+
+            Me + You = Us ❤️
+
+        </p>
+
+        <br>
+
+        <div class="secret-number">
+
+            1894
+
+        </div>
+
+        <p>
+
+            Our little secret 🤭❤️
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- MEMORIES -->
+
+<section id="memories">
+
+    <div class="title">
+
+        <h2>Our Memories</h2>
+
+        <p>
+
+            Moments I never want to forget ❤️
+
+        </p>
+
+    </div>
+
+    <div class="gallery">
+
+        <div class="photo">
+
+            <img src="photo1.jpg" onclick="showImage(this.src)">
+
+        </div>
+
+        <div class="photo">
+
+            <img src="photo2.jpg" onclick="showImage(this.src)">
+
+        </div>
+
+        <div class="photo">
+
+            <img src="photo3.jpg" onclick="showImage(this.src)">
+
+        </div>
+
+        <div class="photo">
+
+            <img src="photo4.jpg" onclick="showImage(this.src)">
+
+        </div>
+
+        <div class="photo">
+
+            <img src="photo5.jpg" onclick="showImage(this.src)">
+
+        </div>
+
+        <div class="photo">
+
+            <img src="photo6.jpg" onclick="showImage(this.src)">
+
+        </div>
+
+        <div class="photo">
+
+            <img src="photo7.jpg" onclick="showImage(this.src)">
+
+        </div>
+
+        <div class="photo">
+
+            <img src="photo8.jpg" onclick="showImage(this.src)">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FINAL -->
+
+<section class="final">
+
+    <div class="final-heart">
+
+        ❤️
+
+    </div>
+
+    <h2>
+
+        Always Yours
+
+    </h2>
+
+    <p>
+
+        I don't know what tomorrow will look like.
+
+        But I know one thing...
+
+        whenever I think about the most beautiful memories
+
+        of my life, somehow, you'll always be a part of them.
+
+    </p>
+
+    <div class="signature">
+
+        — Your Abhinav ❤️
+
+    </div>
+
+    <div style="margin-top:25px;color:#ff91b8">
+
+        15:22 ♾️
+
+    </div>
+
+    <div style="margin-top:8px;color:#ff91b8">
+
+        1894 ❤️
+
+    </div>
+
+</section>
+
+<footer>
+
+    MADE WITH LOVE FOR RIDHIMA ❤️
+
+</footer>
+
+<!-- LIGHTBOX -->
+
+<div id="lightbox" onclick="closeImage()">
+
+    <div class="close">×</div>
+
+    <img id="lightboxImg">
+
+</div>
+
+<!-- MUSIC -->
+
+<audio id="music" loop>
+
+    <source src="music.mp3" type="audio/mpeg">
+
+</audio>
+
+<button class="music" onclick="toggleMusic()" id="musicBtn">
+
+    ♫
+
+</button>
+
+<script>
+
+/* =========================
+
+   STARS
+
+========================= */
+
+const stars = document.getElementById("stars");
+
+for(let i = 0; i < 100; i++){
+
+    const star = document.createElement("div");
+
+    star.className = "star";
+
+    star.style.left = Math.random() * 100 + "%";
+
+    star.style.top = Math.random() * 100 + "%";
+
+    star.style.animationDelay = Math.random() * 3 + "s";
+
+    stars.appendChild(star);
+
+}
+
+/* =========================
+
+   INTRO
+
+========================= */
+
+function openSite(){
+
+    document.getElementById("intro")
+
+        .classList.add("hide");
+
+    document.body.style.overflow = "auto";
+
+    startHearts();
+
+    checkBirthday();
+
+}
+
+/* =========================
+
+   BIRTHDAY DATE
+
+========================= */
+
+/*
+
+   IMPORTANT:
+
+   Ridhima's birthday:
+
+   22 August 2026
+
+   The website automatically checks
+
+   the visitor's phone/device time.
+
+*/
+
+const birthdayDate =
+
+    new Date("August 22, 2026 00:00:00").getTime();
+
+/* =========================
+
+   COUNTDOWN
+
+========================= */
+
+function updateCountdown(){
+
+    const now = new Date().getTime();
+
+    const distance = birthdayDate - now;
+
+    if(distance <= 0){
+
+        document.getElementById("days").innerHTML = "00";
+
+        document.getElementById("hours").innerHTML = "00";
+
+        document.getElementById("minutes").innerHTML = "00";
+
+        document.getElementById("seconds").innerHTML = "00";
+
+        document.querySelector(".countdown-title").innerHTML =
+
+            "TODAY IS HER SPECIAL DAY ❤️";
+
+        return;
+
+    }
+
+    const days = Math.floor(
+
+        distance / (1000 * 60 * 60 * 24)
+
+    );
+
+    const hours = Math.floor(
+
+        (distance % (1000 * 60 * 60 * 24))
+
+        / (1000 * 60 * 60)
+
+    );
+
+    const minutes = Math.floor(
+
+        (distance % (1000 * 60 * 60))
+
+        / (1000 * 60)
+
+    );
+
+    const seconds = Math.floor(
+
+        (distance % (1000 * 60))
+
+        / 1000
+
+    );
+
+    document.getElementById("days").innerHTML =
+
+        String(days).padStart(2,"0");
+
+    document.getElementById("hours").innerHTML =
+
+        String(hours).padStart(2,"0");
+
+    document.getElementById("minutes").innerHTML =
+
+        String(minutes).padStart(2,"0");
+
+    document.getElementById("seconds").innerHTML =
+
+        String(seconds).padStart(2,"0");
+
+}
+
+setInterval(updateCountdown,1000);
+
+updateCountdown();
+
+/* =========================
+
+   BIRTHDAY MODE
+
+========================= */
+
+function checkBirthday(){
+
+    if(new Date().getTime() >= birthdayDate){
+
+        showBirthday();
+
+    }
+
+}
+
+function showBirthday(){
+
+    document.getElementById("birthday")
+
+        .classList.add("show");
+
+    birthdayCelebration();
+
+}
+
+function closeBirthday(){
+
+    document.getElementById("birthday")
+
+        .classList.remove("show");
+
+}
+
+/* =========================
+
+   BIRTHDAY CELEBRATION
+
+========================= */
+
+function birthdayCelebration(){
+
+    for(let i = 0; i < 60; i++){
+
+        setTimeout(createHeart, i * 70);
+
+    }
+
+    for(let i = 0; i < 100; i++){
+
+        setTimeout(createConfetti, i * 30);
+
+    }
+
+}
+
+/* =========================
+
+   FLOATING HEARTS
+
+========================= */
+
+function createHeart(){
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    heart.innerHTML =
+
+        Math.random() > .5 ? "❤️" : "♡";
+
+    heart.style.left =
+
+        Math.random() * 100 + "vw";
+
+    heart.style.fontSize =
+
+        (12 + Math.random() * 22) + "px";
+
+    heart.style.animationDuration =
+
+        (5 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+
+        heart.remove();
+
+    },10000);
+
+}
+
+function startHearts(){
+
+    setInterval(createHeart,800);
+
+}
+
+/* =========================
+
+   CONFETTI
+
+========================= */
+
+function createConfetti(){
+
+    const confetti = document.createElement("div");
+
+    confetti.className = "confetti";
+
+    confetti.style.left =
+
+        Math.random() * 100 + "vw";
+
+    confetti.style.background =
+
+        `hsl(${Math.random()*360},80%,65%)`;
+
+    confetti.style.animationDuration =
+
+        (2.5 + Math.random() * 2.5) + "s";
+
+    document.body.appendChild(confetti);
+
+    setTimeout(() => {
+
+        confetti.remove();
+
+    },5000);
+
+}
+
+/* =========================
+
+   IMAGE LIGHTBOX
+
+========================= */
+
+function showImage(src){
+
+    document.getElementById("lightboxImg").src = src;
+
+    document.getElementById("lightbox")
+
+        .style.display = "flex";
+
+}
+
+function closeImage(){
+
+    document.getElementById("lightbox")
+
+        .style.display = "none";
+
+}
+
+/* =========================
+
+   MUSIC
+
+========================= */
+
+let playing = false;
+
+function toggleMusic(){
+
+    const music =
+
+        document.getElementById("music");
+
+    const btn =
+
+        document.getElementById("musicBtn");
+
+    if(playing){
+
+        music.pause();
+
+        btn.innerHTML = "♫";
+
+        playing = false;
+
+    }
+
+    else{
+
+        music.play()
+
+            .then(() => {
+
+                btn.innerHTML = "❚❚";
+
+                playing = true;
+
+            })
+
+            .catch(() => {
+
+                alert(
+
+                    "Music start nahi hua. Ek baar button dobara press karo ❤️"
+
+                );
+
+            });
+
+    }
+
+}
+
+/* =========================
+
+   ESCAPE KEY
+
+========================= */
+
+document.addEventListener(
+
+    "keydown",
+
+    function(e){
+
+        if(e.key === "Escape"){
+
+            closeImage();
+
+        }
+
+    }
+
+);
+
+</script>
+
+</body>
+
+</html>
+
